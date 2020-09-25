@@ -22,8 +22,8 @@ public class ListaEncadeadaV2 {
 	}
 
 	public void inserirFim(Object elemento) {
-		No novoNo = new No(primeiroNo, elemento);
-		novoNo.setProximo(null);
+		No novoNo = new No(primeiroNo, null, elemento);
+		//novoNo.setProximo(null);
 
 		if (isEmpty()) {
 			primeiroNo = novoNo;
@@ -35,6 +35,7 @@ public class ListaEncadeadaV2 {
 			
 			ultimoNo = novoNo;
 			atualAnterior.setProximo(ultimoNo);
+			novoNo.setAnterior(atualAnterior);
 		}
 	}
 

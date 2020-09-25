@@ -2,10 +2,12 @@
 public class No {
 
 	private No proximo;
+	private No anterior;
 	private Object elemento;
 
-	public No(No proximo, Object elemento) {
+	public No(No proximo, No anterior, Object elemento) {
 		this.proximo = proximo;
+		this.anterior = anterior;
 		this.elemento = elemento;
 	}
 

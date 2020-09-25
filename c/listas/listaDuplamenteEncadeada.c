@@ -24,10 +24,12 @@ int getTamanho(no *lista);
 int isVazia(no *lista);
 
 no *alocarNovoNoMemoria(int v);
+no *lista;
+no *noFinal;
 
 int main(){
 
-no *lista = alocarNovoNoMemoria(5);
+*lista = alocarNovoNoMemoria(5);
 printListEnderecos(lista);
 printf("\n\n");
 addFim(lista, 3);

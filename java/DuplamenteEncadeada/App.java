@@ -1,6 +1,10 @@
 
 public class App {
    public static void main(String args[]) {
+       
+       No primeiroNo;
+       primeiroNo.setProximo(new No);
+       
 	   ListaEncadeadaV2 listaEncadeada = new ListaEncadeadaV2();
 	   listaEncadeada.listarLista();
 	   listaEncadeada.inserirFim(10);
