@@ -14,7 +14,7 @@ void print1(int *v){
       printf("%i - %i\n", i, v[i]);
    }
 }
-
+// TAM_MAX = 10   (x== 9)
 void ordena(int vetor[TAM_MAX]){
 int temp;
 		
